@@ -1,8 +1,13 @@
 import openai
 import re
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set up OpenAI API key
-openai.api_key = "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"
+openai.api_key = os.environ["OPEN_API_KEY"]
 
 def summarize_resume(resume_text):
     resume_text = re.sub('\n', ' ', resume_text)
