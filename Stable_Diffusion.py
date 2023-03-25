@@ -13,7 +13,7 @@ def get_background():
 
     payload = {
     "key": os.environ["STABLE_DIFFUSION_KEY"],
-    "prompt": "Hi, my name is [Your Name], and I am a computer vision and image processing engineer. One of the tools I use frequently in my work is Stable Diffusion API. By combining this powerful API with state-of-the-art image generation techniques, I have been able to create stunning and realistic background images for a wide range of applications. If you are looking for a skilled and experienced image processing engineer who can leverage Stable Diffusion API to help you achieve your goals, I would be thrilled to hear from you. Thank you for considering my application",
+    "prompt": "A sci-fi world beyond galaxies for computer scientist",
     "negative_prompt": "((out of frame)), ((extra fingers)), mutated hands, ((poorly drawn hands)), ((poorly drawn face)), (((mutation))), (((deformed))), (((tiling))), ((naked)), ((tile)), ((fleshpile)), ((ugly)), (((abstract))), blurry, ((bad anatomy)), ((bad proportions)), ((extra limbs)), cloned face, (((skinny))), glitchy, ((extra breasts)), ((double torso)), ((extra arms)), ((extra hands)), ((mangled fingers)), ((missing breasts)), (missing lips), ((ugly face)), ((fat)), ((extra legs)), anime",
     "width": "512",
     "height": "512",
