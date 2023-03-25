@@ -7,7 +7,10 @@ def get_content(filename):
     pdfReader = PyPDF2.PdfReader(pdfFileObj)
 
     pageObj = pdfReader.pages[0]
+    
+    print("Extracted Resume!!")
+    resume_text = pageObj.extract_text()
 
     pdfFileObj.close()
-    print("Extracted Resume!!")
-    return pageObj.extract_text()
+
+    return resume_text

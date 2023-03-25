@@ -16,7 +16,7 @@ def summarize_resume(resume_text):
     response = openai.Completion.create(
         engine="text-davinci-002",
         prompt=f"Please summarize the following resume:\n{resume_text}\nSummary:",
-        max_tokens=60,
+        max_tokens=3000,
         n=1,
         stop=None,
         temperature=0.5,
